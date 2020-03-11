@@ -145,7 +145,7 @@ function createArticles(title, date, firstp, secondp, thirdp){
 
   return article
 }
-data.push({title: "Reasons Why You Should Join the Web Dev Community", Date: "March 11, 2020 ", firstParagraph: "you should join the webdev community because i said so.a;slkdg;alsdkgh;alkdgj;alkjg;alsjdf;aslkdfj'aklsdjg;lakjg;lkaja;slkdgja;dlkjg", secondParagraph: ";alskdgj;alskdgj;alksdfj;lkasdjf ;alskdfj;alsdkfj;lakj a;sldkfj;lkj as;dlfkj ;alskdjf ;alksdjg;alskdjf;asl kdlk;kjas;lkdfj ;lkja;sldkfj;lkj as;dlfkj ;laksjdf ;lkj ;kj    ;alskjf s;dlkfj sa;flkj", thirdParagraph: "you should join the webdev community because its AWESOME! a;skjf;alskdj;lk;laksjdf;l k;jas;dlkfj;aslkdjf;l klkawjf;l klskdjdf ;l;lkafsj ;alskdj"});
+data.push({title: "Reasons Why You Should Join the Web Dev Community", date: "March 11, 2020 ", firstParagraph: "you should join the webdev community because i said so.a;slkdg;alsdkgh;alkdgj;alkjg;alsjdf;aslkdfj'aklsdjg;lakjg;lkaja;slkdgja;dlkjg", secondParagraph: ";alskdgj;alskdgj;alksdfj;lkasdjf ;alskdfj;alsdkfj;lakj a;sldkfj;lkj as;dlfkj ;alskdjf ;alksdjg;alskdjf;asl kdlk;kjas;lkdfj ;lkja;sldkfj;lkj as;dlfkj ;laksjdf ;lkj ;kj    ;alskjf s;dlkfj sa;flkj", thirdParagraph: "you should join the webdev community because its AWESOME! a;skjf;alskdj;lk;laksjdf;l k;jas;dlkfj;aslkdjf;l klkawjf;l klskdjdf ;l;lkafsj ;alskdj"});
 
 const articles = document.querySelector(".articles");
 
