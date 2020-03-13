@@ -98,7 +98,7 @@ const data = [
 
     <span class='expandButton'></span>
   </div>
-
+  
   Hint: You will need to use createElement more than once here!
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
@@ -112,3 +112,44 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+function createArticles(title, date, firstp, secondp, thirdp){
+    let article = document.createElement("div");
+    article.classList.add("article");
+    let articleTitle = document.createElement("h2");
+    article.append(articleTitle);
+    articleTitle.textContent = title;
+    let dateP = document.createElement("p");
+    article.append(dateP);
+    dateP.classList.add("date");
+    dateP.textContent = date;
+    let firstParagraph = document.createElement("p");
+    article.append(firstParagraph);
+    firstParagraph.classList.add("firstPara");
+    firstParagraph.textContent = firstp;
+    let secondParagraph = document.createElement("p");
+    article.append(secondParagraph);
+    secondParagraph.classList.add("secondPara");
+    secondParagraph.textContent = secondp;
+    let thirdParagraph = document.createElement("p");
+    article.append(thirdParagraph);
+    thirdParagraph.classList.add("thirdPara");
+    thirdParagraph.textContent = thirdp;
+    let expandBtn = document.createElement("span");
+    article.append(expandBtn);
+    expandBtn.classList.add("expandButton");
+    expandBtn.textContent = "Click To Read Article";
+
+    expandBtn.addEventListener('click', (event) => {
+        article.classList.toggle("article-open");
+    });
+
+  return article
+}
+data.push({title: "Reasons Why You Should Join the Web Dev Community", date: "March 11, 2020 ", firstParagraph: "you should join the webdev community because i said so.a;slkdg;alsdkgh;alkdgj;alkjg;alsjdf;aslkdfj'aklsdjg;lakjg;lkaja;slkdgja;dlkjg", secondParagraph: ";alskdgj;alskdgj;alksdfj;lkasdjf ;alskdfj;alsdkfj;lakj a;sldkfj;lkj as;dlfkj ;alskdjf ;alksdjg;alskdjf;asl kdlk;kjas;lkdfj ;lkja;sldkfj;lkj as;dlfkj ;laksjdf ;lkj ;kj    ;alskjf s;dlkfj sa;flkj", thirdParagraph: "you should join the webdev community because its AWESOME! a;skjf;alskdj;lk;laksjdf;l k;jas;dlkfj;aslkdjf;l klkawjf;l klskdjdf ;l;lkafsj ;alskdj"});
+
+const articles = document.querySelector(".articles");
+
+data.forEach(info => {
+  articles.append(createArticles(info.title, info.date, info.firstParagraph, info.secondParagraph, info.thirdParagraph))
+});
+
